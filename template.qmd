@@ -1,13 +1,16 @@
 ---
-title: "Your awesome project title"
+title: "Quarto Template"
 author:
-  name: "You et al"
-  affiliation: "From whence you hail"
+  name: "Elena Sheard"
+  affiliation: "NZILBB"
 date: today
 bibliography: refs.bib
 from: markdown+emoji
 format:
   html:
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
     code-fold: false
     link-external-newwindow: true
 theme:
@@ -15,22 +18,18 @@ theme:
   dark: darkly
 ---
 
-:::{.callout-tip}
-# YAML exercise
-- Fill the `title: ` and `name: ` and `affiliation: ` fieds.
-
-  - a couple of handy entries are already completed
-
-  - the existing field: `date: today` will automatically generate today's date (cool huh?  ͡▀̿ ̿ ͜ʖ ͡▀̿ ̿ )
-
-- Add a table of contents following the [guide](https://quarto.org/docs/output-formats/html-basics.html)
-
-- Remove this callout block and render the document
-
-- Give me a :heavy_check_mark: when done or a :hand: if you need help
-:::
-
 # Introduction
+## Test sub-heading
+
+* Test list item 1
+  + Sub-item 1
+  + Sub-tiem 2
+  
+$$
+1+1 = 2
+$$
+
+Test citation @chamberlin1897
 
 :::{.callout-tip}
 # Markdown exercise
@@ -47,7 +46,9 @@ In the template Introduction section take 3-4 minutes to write:
 
 - and an equation (inline or as a block)
 
-- cite one of the articles in in existing `.bib` file using the `@`
+- cite one of the articles in existing `.bib` file using the `@`
+
+- Reference test @chamberlin1897
 
 - remove this callout and render the document and hit the :heavy_check_mark: in zoom
 :::
@@ -92,6 +93,16 @@ pacman::p_load(ggplot2, palmerpenguins)    # Install & load packages
   - Does not matter what they contain but feel free to blurb something in there
 
 - render the document and hit the :heavy_check_mark: in zoom
+:::
+
+::: {.panel-tabset}
+
+## Tab 1
+
+## Tab 2
+
+## Tab 3
+
 :::
 
 # Images
